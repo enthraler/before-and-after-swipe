@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './hello.less';
+import './beforeAndAfterSwipe.less';
 
-export default class Hello {
+export default class BeforeAndAfterSwipe {
     constructor(config) {
         this.container = config.container;
     }
 
     render(authorData) {
-        var greeting = `Hello ${authorData.name}, I am an AMD JS Module compiled with Webpack, Babel and React!`;
+        var greeting = `Hello ${authorData.name}, I am a before and after swipe enthraler!`;
         ReactDOM.render(
             <h1>{greeting}</h1>,
             this.container

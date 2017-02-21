@@ -82,8 +82,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../node_modules/css-loader/index.js??ref--1-1!./../node_modules/less-loader/index.js??ref--1-2!./hello.less", function() {
-			var newContent = require("!!./../node_modules/css-loader/index.js??ref--1-1!./../node_modules/less-loader/index.js??ref--1-2!./hello.less");
+		module.hot.accept("!!./../node_modules/css-loader/index.js??ref--1-1!./../node_modules/less-loader/index.js??ref--1-2!./beforeAndAfterSwipe.less", function() {
+			var newContent = require("!!./../node_modules/css-loader/index.js??ref--1-1!./../node_modules/less-loader/index.js??ref--1-2!./beforeAndAfterSwipe.less");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -453,17 +453,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Hello = function () {
-    function Hello(config) {
-        _classCallCheck(this, Hello);
+var BeforeAndAfterSwipe = function () {
+    function BeforeAndAfterSwipe(config) {
+        _classCallCheck(this, BeforeAndAfterSwipe);
 
         this.container = config.container;
     }
 
-    _createClass(Hello, [{
+    _createClass(BeforeAndAfterSwipe, [{
         key: 'render',
         value: function render(authorData) {
-            var greeting = 'Hello ' + authorData.name + ', I am an AMD JS Module compiled with Webpack, Babel and React!';
+            var greeting = 'Hello ' + authorData.name + ', I am a before and after swipe enthraler!';
             _reactDom2.default.render(_react2.default.createElement(
                 'h1',
                 null,
@@ -472,10 +472,10 @@ var Hello = function () {
         }
     }]);
 
-    return Hello;
+    return BeforeAndAfterSwipe;
 }();
 
-exports.default = Hello;
+exports.default = BeforeAndAfterSwipe;
 
 /***/ })
 /******/ ])});;

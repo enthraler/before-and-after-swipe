@@ -1,10 +1,10 @@
 var path = require('path');
 
 module.exports = {
-    entry: './src/hello.js',
+    entry: './src/beforeAndAfterSwipe.js',
     output: {
         path: './bin',
-        filename: 'hello.bundle.js',
+        filename: 'beforeAndAfterSwipe.bundle.js',
         libraryTarget: 'amd',
     },
     module: {
