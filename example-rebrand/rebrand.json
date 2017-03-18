@@ -1,0 +1,15 @@
+{
+	"before": {
+		"src": "before.jpg",
+		"title": "Taco Bell's old logo",
+		"alt": "Old Taco Bell logo with more colour and swirl"
+	},
+	"after": {
+		"src": "after.jpg",
+		"title": "Taco Bell's new (2016) logo",
+		"alt": "New Taco Bell logo is clean cut and fairly plain. The font looks like Arial."
+	},
+	"width": 500,
+	"height": 416,
+	"caption": "2009, left, at President Obama’s first inauguration on the Mall in Washington. 2017, right, the image of President Trump’s inauguration. (National Park Service)"
+}

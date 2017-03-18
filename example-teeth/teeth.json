@@ -1,0 +1,15 @@
+{
+	"before": {
+		"src": "before.png",
+		"title": "Before",
+		"alt": "Teeth from a zombie"
+	},
+	"after": {
+		"src": "after.png",
+		"title": "After",
+		"alt": "Teeth from a movie star"
+	},
+	"width": 800,
+	"height": 350,
+	"caption": "Photoshop makes a HUGE difference!"
+}
