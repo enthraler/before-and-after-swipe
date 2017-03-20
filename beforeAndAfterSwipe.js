@@ -37,11 +37,13 @@ define(['enthraler', 'css!beforeAndAfter'], function (enthraler, $) {
 
 			// Get the initial position
 			var dragWidth = parseInt(window.getComputedStyle(handle).width),
+				handleWidth = 64, // cannot read from CSS as it is a pseudo class and not part of DOM.
 				posX = handle.offsetLeft + dragWidth - startX,
 				containerOffset = container.getBoundingClientRect().left + window.pageXOffset - document.documentElement.clientLeft,
 				containerWidth = parseInt(window.getComputedStyle(container).width),
-				minLeft = containerOffset + 10,
-				maxLeft = containerOffset + containerWidth - dragWidth - 10;
+				handleSize = parseInt(window.getComputedStyle(handle).width),
+				minLeft = containerOffset + (handleWidth / 2) + 10,
+				maxLeft = containerOffset + containerWidth - (handleWidth / 2) - 10;
 
 			function touchMoveHandler(e) {
 				// Check if it's a mouse or touch event and pass along the correct value
@@ -50,7 +52,7 @@ define(['enthraler', 'css!beforeAndAfter'], function (enthraler, $) {
 				leftValue = moveX + posX - dragWidth;
 
 				// Prevent going off limits
-				if ( leftValue < minLeft) {
+				if (leftValue < minLeft) {
 					leftValue = minLeft;
 				} else if (leftValue > maxLeft) {
 					leftValue = maxLeft;

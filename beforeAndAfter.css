@@ -62,3 +62,7 @@
 	line-height:48px;
 	font-size:30px;
 }
+
+p.caption {
+	margin-top: 0;
+}
